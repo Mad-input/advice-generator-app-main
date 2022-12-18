@@ -1,3 +1,6 @@
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap');
+
 * {
   margin    : 0;
   padding   : 0;
@@ -5,10 +8,126 @@
 }
 
 
+body {
+  min-height: 100vh;
+  background: var(--Dark-Blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'Manrope', sans-serif;
+}
+
+.card {
+  background: var(--Dark-Grayish-Blue);
+  border-radius: 15px;
+
+  width: 400px;
+  height: fit-content;
+
+  padding: 30px;
+  margin: 40px 0;
+
+  position: relative;
+
+  box-shadow: 0 0 30px 5px rgba(0,0,0,.3);
+}
+
+
+.card .advice .advice-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--Neon-Green);
+}
+
+.card .advice .advice-content {
+  font-weight: 800;
+  font-size: 28px;
+  text-align: center;
+  padding: 15px;
+
+  color: var(--Light-Cyan);
+}
+
+.card .btn-generate {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+
+  background: var(--Neon-Green);
+
+  position: absolute;
+  top: calc(100% - 25px);
+  left: calc(50% - 25px);
+
+  cursor: pointer;
+  transition: .2s ease all;
+  outline: none;
+}
+
+.card .btn-generate:hover {
+  box-shadow: 0 0 50px 5px var(--Neon-Green);
+}
+
+.card .btn-generate:active {
+  transform: scale(.9);
+}
+
+.card .btn-generate img {
+  width: 20px;
+  vertical-align: top;
+}
+
+.card .separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.card .separator .line {
+  display: inline-block;
+  height: 1px;
+  background: rgb(199, 199, 199, .2);
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.card .separator .or {
+  padding: 10px;
+}
+
+.card .separator .or span {
+  display: inline-block;
+  height: 15px;
+  width: 5px;
+  margin: 0 4px;
+  border-radius: 10px;
+  background: var(--Light-Cyan);
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card .advice .advice-content {
+    font-size: 25px;
+  }
+} 
+
 
 .attribution {
   font-size : 11px;
   text-align: center;
+
+  margin-top: 50px;
 }
 
 .attribution a {

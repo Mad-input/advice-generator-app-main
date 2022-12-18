@@ -1,0 +1,64 @@
+{
+  "advices": [
+    {
+      "id":10,
+      "content": "Never run with scissors."
+    },
+    {
+      "id":11,
+      "content": "Never set an alarm clock unless you know how to switch it off"
+    },
+    {
+      "id":12,
+      "content": "When in doubt, just take the next small step."
+    },
+    {
+      "id":13,
+      "content": "Plant a tree."
+    },
+    {
+      "id":14,
+      "content": "You have as many hours in a day as the people you admire most."
+    },
+    {
+      "id":15,
+      "content": "A common regret in life is wishing one had the courage to be ones true self."
+    },
+    {
+      "id":16,
+      "content": "If you want to be happily married, marry a happy person."
+    },
+    {
+      "id":17,
+      "content": "Don't cross the streams."
+    },
+    {
+      "id":18,
+      "content": "Sometimes, you just need to say sorry. Even if it's not your fault."
+    },
+    {
+      "id":19,
+      "content": "Visitors are like fish: As much as you might like them, after three days they start to smell."
+    },
+    {
+      "id":21,
+      "content": "Exercise in the rain can really make you feel alive."
+    },
+    {
+      "id":22,
+      "content": "Eat food. Not too much, mostly plants."
+    },
+    {
+      "id":23,
+      "content": "Do something selfless."
+    },
+    {
+      "id":24,
+      "content": "Don't wear clean trousers when walking your dog in the park."
+    },
+    {
+      "id":25,
+      "content": "Things are just things. Don't get too attached to them."
+    }
+  ]
+}

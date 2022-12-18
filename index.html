@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-  Advice #<!-- Advice ID goes here -->
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="card">
+      <div class="advice">
+        <h1 class="advice-title" id="title">ADVICE #</h1>
+        <p class="advice-content" id="content">
+          <!-- Take time once in a while to look up at the stars for at least -->
+        </p>
+      </div>
+      <div class="separator">
+        <span class="line"></span>
+        <span class="or">
+          <span></span><span></span>
+        </span>
+        <span class="line"></span>
+      </div>
+      <button class="btn-generate" id="btnGenerate">
+        <img src="./images/icon-dice.svg" alt="dice">
+      </button>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Miguel Contreras</a>.
+  </footer>
+
+  <script src="./js/main.js" type="module"></script>
 </body>
+
 </html>
