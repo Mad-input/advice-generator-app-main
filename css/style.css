@@ -12,62 +12,74 @@ body {
   min-height: 100vh;
   background: var(--Dark-Blue);
 
-  display: flex;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items    : center;
+  flex-direction : column;
 
   font-family: 'Manrope', sans-serif;
 }
 
 .card {
-  background: var(--Dark-Grayish-Blue);
+  background   : var(--Dark-Grayish-Blue);
   border-radius: 15px;
 
-  width: 400px;
+  width : 400px;
   height: fit-content;
 
   padding: 30px;
-  margin: 40px 0;
+  margin : 40px 0;
 
   position: relative;
 
-  box-shadow: 0 0 30px 5px rgba(0,0,0,.3);
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, .3);
 }
 
 
 .card .advice .advice-title {
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
+  font-size     : 14px;
+  font-weight   : 600;
+  text-align    : center;
   letter-spacing: 3px;
-  color: var(--Neon-Green);
+  color         : var(--Neon-Green);
 }
 
 .card .advice .advice-content {
   font-weight: 800;
-  font-size: 28px;
-  text-align: center;
-  padding: 15px;
+  font-size  : 28px;
+  text-align : center;
+  padding    : 15px;
 
   color: var(--Light-Cyan);
 }
 
 .card .btn-generate {
-  width: 50px;
-  height: 50px;
+  width        : 50px;
+  height       : 50px;
   border-radius: 50%;
-  border: none;
+  border       : none;
 
   background: var(--Neon-Green);
 
   position: absolute;
-  top: calc(100% - 25px);
-  left: calc(50% - 25px);
+  top     : calc(100% - 25px);
+  left    : calc(50% - 25px);
 
-  cursor: pointer;
+  cursor    : pointer;
   transition: .2s ease all;
-  outline: none;
+  outline   : none;
+
+  animation: animate 2s infinite alternate;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .card .btn-generate:hover {
@@ -79,22 +91,22 @@ body {
 }
 
 .card .btn-generate img {
-  width: 20px;
+  width         : 20px;
   vertical-align: top;
 }
 
 .card .separator {
-  display: flex;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  margin: 15px 0;
+  align-items    : center;
+  margin         : 15px 0;
 }
 
 .card .separator .line {
-  display: inline-block;
-  height: 1px;
-  background: rgb(199, 199, 199, .2);
-  flex-grow: 1;
+  display      : inline-block;
+  height       : 1px;
+  background   : rgb(199, 199, 199, .2);
+  flex-grow    : 1;
   border-radius: 5px;
 }
 
@@ -103,24 +115,24 @@ body {
 }
 
 .card .separator .or span {
-  display: inline-block;
-  height: 15px;
-  width: 5px;
-  margin: 0 4px;
+  display      : inline-block;
+  height       : 15px;
+  width        : 5px;
+  margin       : 0 4px;
   border-radius: 10px;
-  background: var(--Light-Cyan);
+  background   : var(--Light-Cyan);
 }
 
 @media screen and (max-width: 500px) {
   .card {
-    width: 90%;
+    width : 90%;
     margin: auto;
   }
 
   .card .advice .advice-content {
     font-size: 25px;
   }
-} 
+}
 
 
 .attribution {
